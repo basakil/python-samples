@@ -1,26 +1,20 @@
 
 def is_prime(number):
-
     if number < 2:
         return False
-
-    for divisor in range(2,number):
+    for divisor in range(2, number):
         if number % divisor == 0:
             return False
-
     return True
 
 # print(is_prime(15));
 
 
 def sum_upto_n(number):
-
-    sum = 0
-
+    sumupto = 0
     for i in range(1, number+1):
-        sum = sum + i
-
-    return sum
+        sumupto = sumupto + i
+    return sumupto
 
 
 # print(sum_upto_n(6))
@@ -29,11 +23,9 @@ def sum_upto_n(number):
 
 def calculate_sum_of_divisors(number):
     sum_of_divisors = 0
-
-    for divisor in range(1,number+1):
+    for divisor in range(1, number+1):
         if number % divisor == 0:
             sum_of_divisors = sum_of_divisors + divisor
-
     return sum_of_divisors
 
 # print(calculate_sum_of_divisors(6))
