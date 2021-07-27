@@ -1,3 +1,7 @@
 tempfile*
 /my-samples/devops.csv
 __pycache__
+.idea
+build/
+dist/
+*.spec
