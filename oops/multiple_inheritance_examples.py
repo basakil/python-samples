@@ -5,8 +5,10 @@ class LandAnimal:
 class WaterAnimal:
     def swim(self):
         print('swim')
+    # def walk(self):
+    #     print('water walk')
 
-class Amphibian(LandAnimal, WaterAnimal):
+class Amphibian(WaterAnimal, LandAnimal):
     pass
 
 frog = Amphibian()

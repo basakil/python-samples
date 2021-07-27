@@ -9,9 +9,7 @@ class Person:
     def __repr__(self):
         return repr((self.name))
 
-
 class Student(Person):
-
     def __init__(self, name, college_name):
         super().__init__(name)
         self.college_name = college_name
@@ -19,13 +17,9 @@ class Student(Person):
     def __repr__(self):
         return repr((super().__repr__(),self.college_name))
 
-
 person = Person('Ranga')
-
 student = Student('Ranga', 'Pondicherry Engg College')
-
 print(person)
-
 print(student)
 
 class Planet:
